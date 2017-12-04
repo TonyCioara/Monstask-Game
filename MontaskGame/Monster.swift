@@ -13,10 +13,21 @@ class Monster: SKSpriteNode {
     
     var health = 300
     var power = 30
+    var critChance = 30
     
     /* You are required to implement this for your subclass to work */
-    override init(texture: SKTexture?, color: UIColor, size: CGSize) {
+    
+    init(image: String, health: Int, power: Int, critChance: Int) {
+        let texture = SKTexture(imageNamed: image)
+        let color = UIColor.clear
+        let size = texture.size()
+        
         super.init(texture: texture, color: color, size: size)
+        
+        self.health = health
+        self.power = power
+        self.critChance = critChance
+        
     }
     
     /* You are required to implement this for your subclass to work */

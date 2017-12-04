@@ -24,6 +24,9 @@ class GameScene: SKScene {
     var defeatRestart: MSButtonNode!
     var endGameBackground: SKSpriteNode!
     
+    var player1HP: SKLabelNode!
+    var player2HP: SKLabelNode!
+    
     var gameRunning = true
     
     let fixedDelta: CFTimeInterval = 1.0 / 60.0
@@ -35,6 +38,9 @@ class GameScene: SKScene {
     override func didMove(to view: SKView) {
         player1 = childNode(withName: "//player1") as! Monster
         player2 = childNode(withName: "//player2") as! Monster
+        
+        player1HP = childNode(withName: "//player1HP") as! SKLabelNode
+        player2HP = childNode(withName: "//player2HP") as! SKLabelNode
         
         victoryMainMenu = childNode(withName: "//victoryMainMenu") as! MSButtonNode
         defeatMainMenu = childNode(withName: "//defeatMainMenu") as! MSButtonNode
@@ -189,6 +195,7 @@ class GameScene: SKScene {
             print ("Could not make scene")
             return
             }
+        
 //        3) Ensure correct aspect mode
         print("scene = \(String(describing: scene))")
         scene.scaleMode = .aspectFit
@@ -206,6 +213,11 @@ class GameScene: SKScene {
         
     }
     
+    func updateLabels() {
+        player1HP.text = String(player1.health)
+        player2HP.text = String(player2.health)
+    }
+    
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
         if gameRunning == false {
@@ -215,6 +227,6 @@ class GameScene: SKScene {
         targetSpawnUpdate()
         botAttackUpdate()
         gameOverCheck()
-        
+        updateLabels()
     }
 }
