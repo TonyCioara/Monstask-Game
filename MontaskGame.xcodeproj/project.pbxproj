@@ -16,6 +16,12 @@
 		214919FB1FC3570C0042C560 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 214919FA1FC3570C0042C560 /* Assets.xcassets */; };
 		214919FE1FC3570C0042C560 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 214919FC1FC3570C0042C560 /* LaunchScreen.storyboard */; };
 		21491A061FC35A690042C560 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21491A051FC35A690042C560 /* Monster.swift */; };
+		214BA3CE1FD727F5009E630C /* explosion1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 214BA3C91FD727F5009E630C /* explosion1@2x.png */; };
+		214BA3CF1FD727F5009E630C /* explosion4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 214BA3CA1FD727F5009E630C /* explosion4@2x.png */; };
+		214BA3D01FD727F5009E630C /* explosion 5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 214BA3CB1FD727F5009E630C /* explosion 5@2x.png */; };
+		214BA3D11FD727F5009E630C /* explosion2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 214BA3CC1FD727F5009E630C /* explosion2@2x.png */; };
+		214BA3D21FD727F5009E630C /* explosion3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 214BA3CD1FD727F5009E630C /* explosion3@2x.png */; };
+		214BA3D41FD72867009E630C /* attackAnimation.sks in Resources */ = {isa = PBXBuildFile; fileRef = 214BA3D31FD72867009E630C /* attackAnimation.sks */; };
 		2179956D1FD4A12100DCB38D /* Target@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2179956A1FD4A12100DCB38D /* Target@2x.png */; };
 		2179956E1FD4A12100DCB38D /* Target@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2179956B1FD4A12100DCB38D /* Target@3x.png */; };
 		2179956F1FD4A12100DCB38D /* Target.png in Resources */ = {isa = PBXBuildFile; fileRef = 2179956C1FD4A12100DCB38D /* Target.png */; };
@@ -52,6 +58,12 @@
 		214919FD1FC3570C0042C560 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		214919FF1FC3570C0042C560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21491A051FC35A690042C560 /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
+		214BA3C91FD727F5009E630C /* explosion1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explosion1@2x.png"; sourceTree = "<group>"; };
+		214BA3CA1FD727F5009E630C /* explosion4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explosion4@2x.png"; sourceTree = "<group>"; };
+		214BA3CB1FD727F5009E630C /* explosion 5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explosion 5@2x.png"; sourceTree = "<group>"; };
+		214BA3CC1FD727F5009E630C /* explosion2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explosion2@2x.png"; sourceTree = "<group>"; };
+		214BA3CD1FD727F5009E630C /* explosion3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explosion3@2x.png"; sourceTree = "<group>"; };
+		214BA3D31FD72867009E630C /* attackAnimation.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = attackAnimation.sks; sourceTree = "<group>"; };
 		2179956A1FD4A12100DCB38D /* Target@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Target@2x.png"; sourceTree = "<group>"; };
 		2179956B1FD4A12100DCB38D /* Target@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Target@3x.png"; sourceTree = "<group>"; };
 		2179956C1FD4A12100DCB38D /* Target.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Target.png; sourceTree = "<group>"; };
@@ -106,10 +118,12 @@
 		214919EC1FC3570C0042C560 /* MontaskGame */ = {
 			isa = PBXGroup;
 			children = (
+				214BA3C81FD727D3009E630C /* animations */,
 				217995691FD4A10700DCB38D /* Icons */,
 				214919ED1FC3570C0042C560 /* AppDelegate.swift */,
 				214919EF1FC3570C0042C560 /* GameScene.sks */,
 				214919F11FC3570C0042C560 /* Actions.sks */,
+				214BA3D31FD72867009E630C /* attackAnimation.sks */,
 				21491A051FC35A690042C560 /* Monster.swift */,
 				214919F31FC3570C0042C560 /* GameScene.swift */,
 				214919F51FC3570C0042C560 /* GameViewController.swift */,
@@ -120,6 +134,18 @@
 				214919FF1FC3570C0042C560 /* Info.plist */,
 			);
 			path = MontaskGame;
+			sourceTree = "<group>";
+		};
+		214BA3C81FD727D3009E630C /* animations */ = {
+			isa = PBXGroup;
+			children = (
+				214BA3CB1FD727F5009E630C /* explosion 5@2x.png */,
+				214BA3C91FD727F5009E630C /* explosion1@2x.png */,
+				214BA3CC1FD727F5009E630C /* explosion2@2x.png */,
+				214BA3CD1FD727F5009E630C /* explosion3@2x.png */,
+				214BA3CA1FD727F5009E630C /* explosion4@2x.png */,
+			);
+			path = animations;
 			sourceTree = "<group>";
 		};
 		217995691FD4A10700DCB38D /* Icons */ = {
@@ -211,6 +237,7 @@
 			files = (
 				2179956E1FD4A12100DCB38D /* Target@3x.png in Resources */,
 				217995841FD4AF6E00DCB38D /* Defeat Restart@2x.png in Resources */,
+				214BA3D21FD727F5009E630C /* explosion3@2x.png in Resources */,
 				217995921FD4AF6E00DCB38D /* Defeat Main Menu@2x.png in Resources */,
 				2179958F1FD4AF6E00DCB38D /* Defeat Main Menu.png in Resources */,
 				217995931FD4AF6E00DCB38D /* Defeat Title.png in Resources */,
@@ -218,8 +245,11 @@
 				217995911FD4AF6E00DCB38D /* Defeat Title@3x.png in Resources */,
 				2179958B1FD4AF6E00DCB38D /* Victory Restart.png in Resources */,
 				217995891FD4AF6E00DCB38D /* Victory Main Menu.png in Resources */,
+				214BA3D41FD72867009E630C /* attackAnimation.sks in Resources */,
 				217995871FD4AF6E00DCB38D /* Victory Restart@2x.png in Resources */,
+				214BA3D11FD727F5009E630C /* explosion2@2x.png in Resources */,
 				217995851FD4AF6E00DCB38D /* Victory Title.png in Resources */,
+				214BA3CE1FD727F5009E630C /* explosion1@2x.png in Resources */,
 				217995881FD4AF6E00DCB38D /* Victory Main Menu@3x.png in Resources */,
 				217995901FD4AF6E00DCB38D /* Defeat Title@2x.png in Resources */,
 				214919F91FC3570C0042C560 /* Main.storyboard in Resources */,
@@ -228,7 +258,9 @@
 				214919F01FC3570C0042C560 /* GameScene.sks in Resources */,
 				217995831FD4AF6E00DCB38D /* Victory Title@3x.png in Resources */,
 				217995861FD4AF6E00DCB38D /* Defeat Main Menu@3x.png in Resources */,
+				214BA3CF1FD727F5009E630C /* explosion4@2x.png in Resources */,
 				217995821FD4AF6E00DCB38D /* Victory Main Menu@2x.png in Resources */,
+				214BA3D01FD727F5009E630C /* explosion 5@2x.png in Resources */,
 				2179958C1FD4AF6E00DCB38D /* Victory Restart@3x.png in Resources */,
 				2179956F1FD4A12100DCB38D /* Target.png in Resources */,
 				214919FB1FC3570C0042C560 /* Assets.xcassets in Resources */,

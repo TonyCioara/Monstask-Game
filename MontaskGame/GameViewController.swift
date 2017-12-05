@@ -17,6 +17,8 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var gameView: UIView!
     
+    gameView.isHidden = true
+    
     @IBAction func outsideButton(_ sender: Any) {
         //        guard let scene = self.scene else {
         //            return

@@ -24,8 +24,11 @@ class GameScene: SKScene {
     var defeatRestart: MSButtonNode!
     var endGameBackground: SKSpriteNode!
     
-    var player1HP: SKLabelNode!
-    var player2HP: SKLabelNode!
+    var player1HPLabel: SKLabelNode!
+    var player2HPLabel: SKLabelNode!
+    
+    var player1PowerLabel: SKLabelNode!
+    var player2PowerLabel: SKLabelNode!
     
     var gameRunning = true
     
@@ -39,8 +42,14 @@ class GameScene: SKScene {
         player1 = childNode(withName: "//player1") as! Monster
         player2 = childNode(withName: "//player2") as! Monster
         
-        player1HP = childNode(withName: "//player1HP") as! SKLabelNode
-        player2HP = childNode(withName: "//player2HP") as! SKLabelNode
+        player1HPLabel = childNode(withName: "//player1HPLabel") as! SKLabelNode
+        player2HPLabel = childNode(withName: "//player2HPLabel") as! SKLabelNode
+        
+        player1PowerLabel = childNode(withName: "//player1PowerLabel") as! SKLabelNode
+        player2PowerLabel = childNode(withName: "//player2PowerLabel") as! SKLabelNode
+        
+        player1PowerLabel.text = String(player1.power)
+        player2PowerLabel.text = String(player2.power)
         
         victoryMainMenu = childNode(withName: "//victoryMainMenu") as! MSButtonNode
         defeatMainMenu = childNode(withName: "//defeatMainMenu") as! MSButtonNode
@@ -214,8 +223,8 @@ class GameScene: SKScene {
     }
     
     func updateLabels() {
-        player1HP.text = String(player1.health)
-        player2HP.text = String(player2.health)
+        player1HPLabel.text = String(player1.health)
+        player2HPLabel.text = String(player2.health)
     }
     
     override func update(_ currentTime: TimeInterval) {
